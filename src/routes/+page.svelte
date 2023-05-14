@@ -29,6 +29,7 @@
 
   let newTodoText = "";
   const addTodo = (text: string) => {
+    if (text === "") return;
     const newTodo: Todo = {
       text,
       completed: false,
